@@ -42,6 +42,8 @@ function App() {
           path="/gdm-static/competitive_comparisons"
           element={<CompetitiveComparisions />}
         />
+        <Route path="/gdm-static" element={<></>} />
+        <Route path="/" element={<></>} />
       </Routes>
     </Router>
   );
