@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gdm-static/static/css/main.6271cb2c.css",
-    "main.js": "/gdm-static/static/js/main.04f8648e.js",
+    "main.js": "/gdm-static/static/js/main.540237c5.js",
     "static/media/Logo.svg": "/gdm-static/static/media/Logo.8cbb2242f21a10d2a26fc4ac9d4ef462.svg",
     "index.html": "/gdm-static/index.html",
     "static/media/MenuToggleClose.svg": "/gdm-static/static/media/MenuToggleClose.d1aad97e7e500cc6b20d5d95c0b841ef.svg",
@@ -9,6 +9,6 @@
   },
   "entrypoints": [
     "static/css/main.6271cb2c.css",
-    "static/js/main.04f8648e.js"
+    "static/js/main.540237c5.js"
   ]
 }
