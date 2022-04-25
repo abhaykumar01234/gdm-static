@@ -1,5 +1,6 @@
 {
   "name": "gdm-static",
+  "homepage": "https://abhaykumar01234.github.io/gdm-static",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +13,8 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
@@ -34,6 +37,7 @@
   },
   "devDependencies": {
     "classnames": "^2.3.1",
+    "gh-pages": "^3.2.3",
     "sass": "^1.50.1"
   }
 }
