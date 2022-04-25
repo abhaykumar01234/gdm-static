@@ -18,16 +18,28 @@ function App() {
       <Nav />
       <br />
       <Routes>
-        <Route path="/qualityscore" element={<QualityScore />} />
-        <Route path="/guidelines" element={<Guidelines />} />
-        <Route path="/accountsfaq" element={<AccountsFAQ />} />
-        <Route path="/listings_guidelines" element={<ListingsGuidelines />} />
-        <Route path="/service_description" element={<ServiceDescription />} />
-        <Route path="/buyer_discovery" element={<BuyerDiscovery />} />
-        <Route path="/onboarding" element={<Onboarding />} />
-        <Route path="/marketing_tools" element={<MarketingTools />} />
+        <Route path="/gdm-static/qualityscore" element={<QualityScore />} />
+        <Route path="/gdm-static/guidelines" element={<Guidelines />} />
+        <Route path="/gdm-static/accountsfaq" element={<AccountsFAQ />} />
         <Route
-          path="/competitive_comparisons"
+          path="/gdm-static/listings_guidelines"
+          element={<ListingsGuidelines />}
+        />
+        <Route
+          path="/gdm-static/service_description"
+          element={<ServiceDescription />}
+        />
+        <Route
+          path="/gdm-static/buyer_discovery"
+          element={<BuyerDiscovery />}
+        />
+        <Route path="/gdm-static/onboarding" element={<Onboarding />} />
+        <Route
+          path="/gdm-static/marketing_tools"
+          element={<MarketingTools />}
+        />
+        <Route
+          path="/gdm-static/competitive_comparisons"
           element={<CompetitiveComparisions />}
         />
       </Routes>

@@ -23,30 +23,34 @@ const Nav = () => {
             </button>
             <ul onClick={toggle} className={s.menu}>
               <li>
-                <Link to="/buyer_discovery">Buyer Discovery</Link>
+                <Link to="/gdm-static/buyer_discovery">Buyer Discovery</Link>
               </li>
               <li>
-                <Link to="/competitive_comparisons">
+                <Link to="/gdm-static/competitive_comparisons">
                   Competitive Comparisions
                 </Link>
               </li>
               <li>
-                <Link to="/qualityscore">Quality Score</Link>
+                <Link to="/gdm-static/qualityscore">Quality Score</Link>
               </li>
               <li>
-                <Link to="/guidelines">Guidelines</Link>
+                <Link to="/gdm-static/guidelines">Guidelines</Link>
               </li>
               <li>
-                <Link to="/accountsfaq">Accounts FAQ</Link>
+                <Link to="/gdm-static/accountsfaq">Accounts FAQ</Link>
               </li>
               <li>
-                <Link to="/listings_guidelines">Listings Guidelines</Link>
+                <Link to="/gdm-static/listings_guidelines">
+                  Listings Guidelines
+                </Link>
               </li>
               <li>
-                <Link to="/service_description">Service Description</Link>
+                <Link to="/gdm-static/service_description">
+                  Service Description
+                </Link>
               </li>
               <li>
-                <Link to="/onboarding">Onboarding</Link>
+                <Link to="/gdm-static/onboarding">Onboarding</Link>
               </li>
             </ul>
           </div>
