@@ -1,0 +1,36 @@
+@use "base" as *;
+
+.contentBox {
+  max-width: 960px;
+}
+
+details {
+  summary {
+    padding-block: 2rem 1rem;
+    border-top: 1px solid var(--steel);
+    cursor: pointer;
+    &::marker {
+      color: var(--sky);
+      font-size: 1.5em;
+    }
+    h3 {
+      display: inline-block;
+      margin-left: 0.5rem;
+      width: 90%;
+    }
+  }
+  & > div {
+    .video {
+      background-color: rgba(#6f7878, 0.5);
+      max-width: 640px;
+      aspect-ratio: 2/1;
+      margin-bottom: 1.5rem;
+
+      display: grid;
+      place-items: center;
+      h1 {
+        color: var(--steel);
+      }
+    }
+  }
+}

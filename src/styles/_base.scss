@@ -1,0 +1,179 @@
+:root {
+  --font-sans: Graphik, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+    Cantarell, Noto Sans, sans-serif;
+  --font-serif: ui-serif, serif;
+  --font-mono: Dank Mono, Operator Mono, Inconsolata, Fira Mono, ui-monospace,
+    SF Mono, Monaco, Droid Sans Mono, Source Code Pro, monospace;
+
+  --body-width: clamp(320px, 90vw, 1200px);
+  --body-gutter: calc(calc(100vw - var(--body-width)) / 2);
+
+  // for paragraph
+  --size-content-1: 45ch;
+  --size-content-2: 60ch;
+  --size-content-3: 80ch;
+
+  --font-weight-1: 100;
+  --font-weight-2: 200;
+  --font-weight-3: 300;
+  --font-weight-4: 400;
+  --font-weight-5: 500;
+  --font-weight-6: 600;
+  --font-weight-7: 700;
+  --font-weight-8: 800;
+  --font-weight-9: 900;
+
+  --font-letterspacing-0: -0.05em;
+  --font-letterspacing-1: 0.025em;
+  --font-letterspacing-2: 0.05em;
+  --font-letterspacing-3: 0.075em;
+  --font-letterspacing-4: 0.15em;
+  --font-letterspacing-5: 0.5em;
+  --font-letterspacing-6: 0.75em;
+  --font-letterspacing-7: 1em;
+
+  --font-lineheight-00: 0.95;
+  --font-lineheight-0: 1.1;
+  --font-lineheight-1: 1.25;
+  --font-lineheight-2: 1.375;
+  --font-lineheight-3: 1.5;
+  --font-lineheight-4: 1.75;
+  --font-lineheight-5: 2;
+
+  --heading-1: clamp(24px, 4vw, 28px);
+  --heading-2: clamp(20px, 3vw, 24px);
+  --heading-3: clamp(16px, 2vw, 20px);
+  --heading-4: clamp(12px, 1.5vw, 16px);
+  --heading-5: clamp(10px, 1vw, 14px);
+  --heading-6: clamp(8px, 1vw, 12px);
+
+  --size-fluid-1: clamp(1.25rem, 2vw, 1.5rem);
+  --size-fluid-2: clamp(0.825rem, 1vw, 1rem);
+  --size-fluid-3: clamp(0.725rem, 1vw, 0.825rem);
+
+  --white: #fff;
+  --black: #000;
+  --brandBlue: #002856;
+  --actionBlue: #0052d6;
+  --tangerine: #ff540a;
+  --sky: #009ddb;
+  --lemon: #fec10d;
+  --steel: #6f7878;
+  --rose: #af0d43;
+  --green: #00a76d;
+  --yellow: #f5ab23;
+  --red: #de0a01;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: var(--heading-1);
+  margin-bottom: var(--size-fluid-1);
+  font-weight: var(--font-weight-8);
+}
+h2 {
+  font-size: var(--heading-2);
+  margin-bottom: var(--size-fluid-2);
+  font-weight: var(--font-weight-7);
+}
+h3 {
+  font-size: var(--heading-3);
+  margin-bottom: var(--size-fluid-3);
+  font-weight: var(--font-weight-7);
+}
+h4 {
+  font-size: var(--heading-4);
+  margin-bottom: var(--size-fluid-3);
+  font-weight: var(--font-weight-7);
+}
+h5 {
+  font-size: var(--heading-5);
+  margin-bottom: var(--size-fluid-3);
+  font-weight: var(--font-weight-7);
+}
+h6 {
+  font-size: var(--heading-6);
+  margin-bottom: var(--size-fluid-3);
+}
+
+p,
+li {
+  line-height: var(--font-lineheight-2);
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+}
+
+p {
+  text-align: justify;
+}
+
+p,
+ol,
+ul {
+  margin-bottom: var(--size-fluid-2);
+}
+
+ol {
+  margin-left: clamp(2rem, 4vw, 3.5rem);
+}
+
+ul {
+  list-style-type: none;
+  text-indent: -20px;
+  margin-left: 16px;
+
+  li {
+    &::before {
+      content: "\25AA";
+      color: var(--brandBlue);
+      font-size: 1rem;
+      margin-right: 0.25rem;
+    }
+  }
+}
+
+li {
+  margin-bottom: 0.5rem;
+  max-inline-size: var(--size-content-3);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--brandBlue);
+}
+
+a {
+  color: var(--actionBlue);
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: var(--font-sans);
+  width: var(--body-width);
+  margin-inline: auto;
+  min-height: 100vh;
+  overflow-y: scroll;
+}
+
+.fluidContainer {
+  margin-inline: calc(var(--body-gutter) * -1);
+}
+
+@media (min-width: 968px) {
+  .fluidContainer {
+    margin-inline: calc(var(--body-gutter) * -1 + 0.5rem);
+    // include scrollbar width as well
+  }
+}
