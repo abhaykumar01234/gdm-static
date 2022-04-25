@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/gdm-static/static/css/main.6271cb2c.css",
+    "main.js": "/gdm-static/static/js/main.abd701eb.js",
+    "static/media/Logo.svg": "/gdm-static/static/media/Logo.8cbb2242f21a10d2a26fc4ac9d4ef462.svg",
+    "index.html": "/gdm-static/index.html",
+    "static/media/MenuToggleClose.svg": "/gdm-static/static/media/MenuToggleClose.d1aad97e7e500cc6b20d5d95c0b841ef.svg",
+    "static/media/MenuToggle.svg": "/gdm-static/static/media/MenuToggle.20097cd0f7d9ebd8cc6911448f10da15.svg"
+  },
+  "entrypoints": [
+    "static/css/main.6271cb2c.css",
+    "static/js/main.abd701eb.js"
+  ]
+}
